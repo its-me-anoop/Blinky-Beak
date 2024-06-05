@@ -24,12 +24,15 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(gameModel.isGameOver ? .red : .white)
-                    Text("Score: \(gameModel.score)")
-                        .font(.title)
-                        .foregroundColor(.white)
                     Text("Highest Score: \(gameModel.highestScore)")
                             .font(.title)
+                            .fontWeight(.bold)
                         .foregroundColor(.white)
+                    Text("Score: \(gameModel.score)")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    
                        
                 }
                 
@@ -41,8 +44,8 @@ struct ContentView: View {
                       alignment: .top
                     )
             
-                .background(.brown)
-                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .background(.green)
+                .shadow(color: .indigo ,radius: 50)
                 
                 
                 
@@ -79,7 +82,7 @@ struct ContentView: View {
                         .shadow(radius: 20)
                 }
             }
-            GroundView()
+            GroundView(isGameStarted: gameModel.isGameStarted)
                    
         }
         .onTapGesture {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B3D123A2C1064480035491D /* ground-3.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D12392C1064480035491D /* ground-3.riv */; };
+		6B3D123C2C1064BD0035491D /* ground-4.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D123B2C1064BD0035491D /* ground-4.riv */; };
+		6B3D123E2C1084860035491D /* ground-6.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D123D2C1084860035491D /* ground-6.riv */; };
 		6B62433A2C0F45B400CBF9C9 /* Flappy_BirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */; };
 		6B62433C2C0F45B400CBF9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62433B2C0F45B400CBF9C9 /* ContentView.swift */; };
 		6B62433E2C0F45B800CBF9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B3D12392C1064480035491D /* ground-3.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-3.riv"; sourceTree = "<group>"; };
+		6B3D123B2C1064BD0035491D /* ground-4.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-4.riv"; sourceTree = "<group>"; };
+		6B3D123D2C1084860035491D /* ground-6.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-6.riv"; sourceTree = "<group>"; };
 		6B6243362C0F45B400CBF9C9 /* Flappy Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_BirdApp.swift; sourceTree = "<group>"; };
 		6B62433B2C0F45B400CBF9C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 				6B6243472C0F461100CBF9C9 /* GameModel.swift */,
 				6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */,
 				6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */,
+				6B3D123D2C1084860035491D /* ground-6.riv */,
+				6B3D123B2C1064BD0035491D /* ground-4.riv */,
+				6B3D12392C1064480035491D /* ground-3.riv */,
 				6B6243532C0F8D3D00CBF9C9 /* flying_bird.riv */,
 				6B62433F2C0F45B800CBF9C9 /* Preview Content */,
 				6B6243612C0FF84100CBF9C9 /* SoundManager.swift */,
@@ -172,8 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6243412C0F45B800CBF9C9 /* Preview Assets.xcassets in Resources */,
+				6B3D123C2C1064BD0035491D /* ground-4.riv in Resources */,
 				6B6243542C0F8D3D00CBF9C9 /* flying_bird.riv in Resources */,
+				6B3D123A2C1064480035491D /* ground-3.riv in Resources */,
 				6B6243642C0FF8A800CBF9C9 /* flyerdie.wav in Resources */,
+				6B3D123E2C1084860035491D /* ground-6.riv in Resources */,
 				6B6243602C0FF7D500CBF9C9 /* crawler_jump.wav in Resources */,
 				6B62435F2C0FF7D500CBF9C9 /* button.wav in Resources */,
 				6B62433E2C0F45B800CBF9C9 /* Assets.xcassets in Resources */,

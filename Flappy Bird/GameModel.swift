@@ -10,7 +10,7 @@ struct Obstacle: Hashable {
 class GameModel: ObservableObject {
     @Published var birdPosition = CGPoint(x: 100, y: 300)
     @Published var obstacles = [Obstacle]()
-    @Published var isGameOver = false
+    @Published var isGameOver = true
     @Published var score = 0
     @Published var highestScore = 0
     @Published var x = (UIScreen.main.bounds.width) / 2
@@ -20,13 +20,10 @@ class GameModel: ObservableObject {
     var gravity: CGFloat = 2.5
     var flapHeight: CGFloat = 20.0
     var birdVelocity: CGFloat = 0.0
-    var obstacleSpeed: CGFloat = 2.5
+    var obstacleSpeed: CGFloat = 3.0
     var groundBounceVelocity: CGFloat = 0 // Set to zero to stop the bird at the ground level
     var timer: AnyCancellable?
-
-    init() {
-        startGame()
-    }
+    let fallSpeed: CGFloat = 2.5
 
     func startGame() {
         SoundManager.shared.playButtonSound()
@@ -92,6 +89,8 @@ class GameModel: ObservableObject {
             }
         }
     }
+    
+   
 
     func gameOver() {
         isGameOver = true
