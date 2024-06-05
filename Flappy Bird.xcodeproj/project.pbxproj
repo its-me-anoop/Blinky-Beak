@@ -73,6 +73,10 @@
 		6B6243382C0F45B400CBF9C9 /* Flappy Bird */ = {
 			isa = PBXGroup;
 			children = (
+				6B62435D2C0FF7D500CBF9C9 /* button.wav */,
+				6B6243652C0FFAF700CBF9C9 /* bgm.mp3 */,
+				6B6243632C0FF8A800CBF9C9 /* flyerdie.wav */,
+				6B62435E2C0FF7D500CBF9C9 /* crawler_jump.wav */,
 				6B62434B2C0F4FC700CBF9C9 /* Views */,
 				6B6243472C0F461100CBF9C9 /* GameModel.swift */,
 				6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */,
@@ -97,10 +101,6 @@
 			children = (
 				6B6243492C0F4EAE00CBF9C9 /* BirdView.swift */,
 				6B62433B2C0F45B400CBF9C9 /* ContentView.swift */,
-				6B62435D2C0FF7D500CBF9C9 /* button.wav */,
-				6B6243652C0FFAF700CBF9C9 /* bgm.mp3 */,
-				6B6243632C0FF8A800CBF9C9 /* flyerdie.wav */,
-				6B62435E2C0FF7D500CBF9C9 /* crawler_jump.wav */,
 				6B62434C2C0F4FE600CBF9C9 /* GroundView.swift */,
 				6B62434E2C0F509800CBF9C9 /* CloudView.swift */,
 			);
