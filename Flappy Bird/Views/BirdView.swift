@@ -5,26 +5,32 @@
 //  Created by Anoop Jose on 04/06/2024.
 //
 
+// Importing SwiftUI for UI components and RiveRuntime for handling animations.
 import SwiftUI
 import RiveRuntime
 
+// BirdView struct defines the view for the bird in the game.
 struct BirdView: View {
-    var position: CGPoint
-    
+    var position: CGPoint  // Position of the bird on the screen.
+
+    // The body of the BirdView defines its visual structure.
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Container@*/VStack/*@END_MENU_TOKEN@*/ {
+        VStack {  // Vertical stack to organize views.
+            // Rive animation model for the bird, showing it as flying.
             RiveViewModel(fileName: "flying_bird").view()
-                .frame(height: 50)
-                .position(position)
+                .frame(height: 50)  // Sets the height of the frame for the bird's view.
+                .position(position)  // Positions the bird according to the CGPoint provided.
         }
     }
 }
 
+// SwiftUI Preview for BirdView
 struct BirdView_Previews: PreviewProvider {
     static var previews: some View {
-        BirdView(position: CGPoint(x: 100, y: 300))
+        BirdView(position: CGPoint(x: 100, y: 300))  // Preview the BirdView with a specified position.
     }
 }
+
 
 
 
