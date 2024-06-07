@@ -17,14 +17,32 @@ struct SettingsView: View {
                 .fontWeight(.bold)
                 .padding()
             Form {
+                Section(header: Text("Theme")) {
+                                    Picker("Game Theme", selection: $settings.gameTheme) {
+                                        Text("Earth").tag("Earth")
+                                            .foregroundColor(.black)
+                                        Text("Outer Space").tag("OuterSpace")
+                                            .foregroundColor(.black)
+                                    }
+                                    .pickerStyle(SegmentedPickerStyle())
+                                }
+                .listItemTint(.orange)
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .font(Font.custom("December Show", size: 20.0))
+                .listRowBackground(LinearGradient(colors: [
+                    .orange, .yellow], startPoint: .top, endPoint: .bottom))
                     
                 Section(header: Text("Sound and Haptics").font(Font.custom("Ambery Garden", size: 20.0))) {
                         Toggle("Sound Effects", systemImage: "music.note.list" ,isOn: $settings.soundEffectsEnabled)
                             .padding()
+                            .foregroundColor(.black)
                         Toggle("Music", systemImage: "music.note", isOn: $settings.musicEnabled)
                             .padding()
+                            .foregroundColor(.black)
                         Toggle("Haptics", systemImage: "iphone.radiowaves.left.and.right", isOn: $settings.hapticsEnabled)
                             .padding()
+                            .foregroundColor(.black)
                     }
                     .listItemTint(.orange)
                     .foregroundColor(.white)
@@ -37,8 +55,11 @@ struct SettingsView: View {
                       //Difficulty Picker goes here
                     Picker("Difficulty", selection: $settings.gameDifficulty) {
                                             Text("Easy").tag("Easy")
+                            .foregroundColor(.black)
                                             Text("Medium").tag("Medium")
+                            .foregroundColor(.black)
                                             Text("Hard").tag("Hard")
+                            .foregroundColor(.black)
                                         }
                                         .pickerStyle(SegmentedPickerStyle())
                                         .padding()

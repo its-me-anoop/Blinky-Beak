@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B3D123E2C1084860035491D /* ground-6.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D123D2C1084860035491D /* ground-6.riv */; };
 		6B62433A2C0F45B400CBF9C9 /* Flappy_BirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */; };
 		6B62433C2C0F45B400CBF9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62433B2C0F45B400CBF9C9 /* ContentView.swift */; };
 		6B62433E2C0F45B800CBF9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */; };
@@ -30,11 +29,9 @@
 		6BB81BB02C126B9100DEDB4F /* DecemberShow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */; };
 		6BBA2C1F2C11B3120078ED69 /* bounce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BBA2C1E2C11B3120078ED69 /* bounce.wav */; };
 		6BBA2C222C11B5760078ED69 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBA2C212C11B5760078ED69 /* TreeView.swift */; };
-		6BBA2C242C11BC770078ED69 /* tree.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6BBA2C232C11BC770078ED69 /* tree.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B3D123D2C1084860035491D /* ground-6.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-6.riv"; sourceTree = "<group>"; };
 		6B6243362C0F45B400CBF9C9 /* Flappy Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_BirdApp.swift; sourceTree = "<group>"; };
 		6B62433B2C0F45B400CBF9C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DecemberShow.ttf; sourceTree = "<group>"; };
 		6BBA2C1E2C11B3120078ED69 /* bounce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bounce.wav; sourceTree = "<group>"; };
 		6BBA2C212C11B5760078ED69 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
-		6BBA2C232C11BC770078ED69 /* tree.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = tree.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +101,6 @@
 				6B6243472C0F461100CBF9C9 /* GameModel.swift */,
 				6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */,
 				6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */,
-				6BBA2C232C11BC770078ED69 /* tree.riv */,
-				6B3D123D2C1084860035491D /* ground-6.riv */,
 				6B6243532C0F8D3D00CBF9C9 /* flying_bird.riv */,
 				6B62433F2C0F45B800CBF9C9 /* Preview Content */,
 				6B6243612C0FF84100CBF9C9 /* SoundManager.swift */,
@@ -205,10 +199,8 @@
 				6BBA2C1F2C11B3120078ED69 /* bounce.wav in Resources */,
 				6B6243542C0F8D3D00CBF9C9 /* flying_bird.riv in Resources */,
 				6B6243642C0FF8A800CBF9C9 /* flyerdie.wav in Resources */,
-				6B3D123E2C1084860035491D /* ground-6.riv in Resources */,
 				6B6243602C0FF7D500CBF9C9 /* crawler_jump.wav in Resources */,
 				6B62435F2C0FF7D500CBF9C9 /* button.wav in Resources */,
-				6BBA2C242C11BC770078ED69 /* tree.riv in Resources */,
 				6B62433E2C0F45B800CBF9C9 /* Assets.xcassets in Resources */,
 				6BB81BAE2C126AA100DEDB4F /* AmberyGarden.ttf in Resources */,
 				6B6243662C0FFAF700CBF9C9 /* bgm.mp3 in Resources */,

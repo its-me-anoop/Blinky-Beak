@@ -35,6 +35,14 @@ class UserSettings: ObservableObject {
             notifyDifficultyChange()  // Ensure this method sends a notification.
         }
     }
+    
+    @Published var gameTheme: String {
+            didSet {
+                UserDefaults.standard.set(gameTheme, forKey: "gameTheme")
+                NotificationCenter.default.post(name: Notification.Name("GameThemeChanged"), object: nil)
+            }
+        }
+    
 
     init() {
         // Load the soundEnabled state from UserDefaults, default to true if not set
@@ -43,6 +51,8 @@ class UserSettings: ObservableObject {
         self.musicEnabled = UserDefaults.standard.object(forKey: "musicEnabled") as? Bool ?? true
         
         self.hapticsEnabled = UserDefaults.standard.object(forKey: "hapticsEnabled") as? Bool ?? true
+        
+        gameTheme = UserDefaults.standard.string(forKey: "gameTheme") ?? "Earth" // Default theme
         
     }
 }

@@ -27,6 +27,7 @@ class GameModel: ObservableObject {
     @Published var highestScore: Int
     @Published var isGameStarted: Bool
     @Published var flapToggle: Bool = false
+    @Published var theme: String = "Earth"
     @Published var groundOffset: CGFloat = 0  // Offset for the ground.
 
     // MARK: - Game Physics Properties
@@ -53,7 +54,9 @@ class GameModel: ObservableObject {
         flapHeight = 20.0
         birdVelocity = 0.0
         obstacleSpeed = groundSpeed
+        NotificationCenter.default.addObserver(self, selector: #selector(updateForTheme), name: NSNotification.Name("GameThemeChanged"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleDifficultyChange), name: NSNotification.Name("GameDifficultyChanged"), object: nil)
+        updateForTheme()
         updateGameDifficulty() // Set initial difficulty
         resetGame()
     }
@@ -62,6 +65,19 @@ class GameModel: ObservableObject {
         updateGameDifficulty()
         // Optionally reset or adjust the game state based on new settings
     }
+    
+    @objc func updateForTheme() {
+            switch UserSettings.shared.gameTheme {
+            case "Earth":
+                theme = "Earth"
+                break
+            case "OuterSpace":
+                theme = "Outer Space"
+                break
+            default:
+                break
+            }
+        }
     
     func updateGameDifficulty() {
             switch UserSettings.shared.gameDifficulty {
@@ -224,7 +240,6 @@ class GameModel: ObservableObject {
     /// Ends the game, stopping the timer and playing end-game sound effects.
     func gameOver() {
         isGameOver = true
-        isGameStarted = false
         timer?.cancel()
         SoundManager.shared.playGameOverSound()
         SoundManager.shared.stopBackgroundMusic()
