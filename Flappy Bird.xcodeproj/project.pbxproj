@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B3D123A2C1064480035491D /* ground-3.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D12392C1064480035491D /* ground-3.riv */; };
-		6B3D123C2C1064BD0035491D /* ground-4.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D123B2C1064BD0035491D /* ground-4.riv */; };
 		6B3D123E2C1084860035491D /* ground-6.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6B3D123D2C1084860035491D /* ground-6.riv */; };
 		6B62433A2C0F45B400CBF9C9 /* Flappy_BirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */; };
 		6B62433C2C0F45B400CBF9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62433B2C0F45B400CBF9C9 /* ContentView.swift */; };
@@ -25,11 +23,17 @@
 		6B6243622C0FF84100CBF9C9 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6243612C0FF84100CBF9C9 /* SoundManager.swift */; };
 		6B6243642C0FF8A800CBF9C9 /* flyerdie.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6B6243632C0FF8A800CBF9C9 /* flyerdie.wav */; };
 		6B6243662C0FFAF700CBF9C9 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B6243652C0FFAF700CBF9C9 /* bgm.mp3 */; };
+		6BB81BA32C122FC700DEDB4F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB81BA22C122FC700DEDB4F /* SettingsView.swift */; };
+		6BB81BA52C1231EE00DEDB4F /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB81BA42C1231EE00DEDB4F /* UserSettings.swift */; };
+		6BB81BAC2C126A7A00DEDB4F /* SuperBoys.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB81BAB2C126A7A00DEDB4F /* SuperBoys.ttf */; };
+		6BB81BAE2C126AA100DEDB4F /* AmberyGarden.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB81BAD2C126AA100DEDB4F /* AmberyGarden.ttf */; };
+		6BB81BB02C126B9100DEDB4F /* DecemberShow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */; };
+		6BBA2C1F2C11B3120078ED69 /* bounce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BBA2C1E2C11B3120078ED69 /* bounce.wav */; };
+		6BBA2C222C11B5760078ED69 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBA2C212C11B5760078ED69 /* TreeView.swift */; };
+		6BBA2C242C11BC770078ED69 /* tree.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6BBA2C232C11BC770078ED69 /* tree.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B3D12392C1064480035491D /* ground-3.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-3.riv"; sourceTree = "<group>"; };
-		6B3D123B2C1064BD0035491D /* ground-4.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-4.riv"; sourceTree = "<group>"; };
 		6B3D123D2C1084860035491D /* ground-6.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ground-6.riv"; sourceTree = "<group>"; };
 		6B6243362C0F45B400CBF9C9 /* Flappy Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_BirdApp.swift; sourceTree = "<group>"; };
@@ -46,6 +50,15 @@
 		6B6243612C0FF84100CBF9C9 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		6B6243632C0FF8A800CBF9C9 /* flyerdie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flyerdie.wav; sourceTree = "<group>"; };
 		6B6243652C0FFAF700CBF9C9 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		6BB81BA22C122FC700DEDB4F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6BB81BA42C1231EE00DEDB4F /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		6BB81BA82C12670400DEDB4F /* Flappy-Bird-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Flappy-Bird-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6BB81BAB2C126A7A00DEDB4F /* SuperBoys.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperBoys.ttf; sourceTree = "<group>"; };
+		6BB81BAD2C126AA100DEDB4F /* AmberyGarden.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmberyGarden.ttf; sourceTree = "<group>"; };
+		6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DecemberShow.ttf; sourceTree = "<group>"; };
+		6BBA2C1E2C11B3120078ED69 /* bounce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bounce.wav; sourceTree = "<group>"; };
+		6BBA2C212C11B5760078ED69 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		6BBA2C232C11BC770078ED69 /* tree.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = tree.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,20 +92,25 @@
 		6B6243382C0F45B400CBF9C9 /* Flappy Bird */ = {
 			isa = PBXGroup;
 			children = (
+				6BB81BA82C12670400DEDB4F /* Flappy-Bird-Info.plist */,
+				6BB81BAB2C126A7A00DEDB4F /* SuperBoys.ttf */,
+				6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */,
+				6BB81BAD2C126AA100DEDB4F /* AmberyGarden.ttf */,
 				6B62435D2C0FF7D500CBF9C9 /* button.wav */,
 				6B6243652C0FFAF700CBF9C9 /* bgm.mp3 */,
 				6B6243632C0FF8A800CBF9C9 /* flyerdie.wav */,
 				6B62435E2C0FF7D500CBF9C9 /* crawler_jump.wav */,
+				6BBA2C1E2C11B3120078ED69 /* bounce.wav */,
 				6B62434B2C0F4FC700CBF9C9 /* Views */,
 				6B6243472C0F461100CBF9C9 /* GameModel.swift */,
 				6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */,
 				6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */,
+				6BBA2C232C11BC770078ED69 /* tree.riv */,
 				6B3D123D2C1084860035491D /* ground-6.riv */,
-				6B3D123B2C1064BD0035491D /* ground-4.riv */,
-				6B3D12392C1064480035491D /* ground-3.riv */,
 				6B6243532C0F8D3D00CBF9C9 /* flying_bird.riv */,
 				6B62433F2C0F45B800CBF9C9 /* Preview Content */,
 				6B6243612C0FF84100CBF9C9 /* SoundManager.swift */,
+				6BB81BA42C1231EE00DEDB4F /* UserSettings.swift */,
 			);
 			path = "Flappy Bird";
 			sourceTree = "<group>";
@@ -112,6 +130,8 @@
 				6B62433B2C0F45B400CBF9C9 /* ContentView.swift */,
 				6B62434C2C0F4FE600CBF9C9 /* GroundView.swift */,
 				6B62434E2C0F509800CBF9C9 /* CloudView.swift */,
+				6BBA2C212C11B5760078ED69 /* TreeView.swift */,
+				6BB81BA22C122FC700DEDB4F /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,15 +201,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6243412C0F45B800CBF9C9 /* Preview Assets.xcassets in Resources */,
-				6B3D123C2C1064BD0035491D /* ground-4.riv in Resources */,
+				6BB81BAC2C126A7A00DEDB4F /* SuperBoys.ttf in Resources */,
+				6BBA2C1F2C11B3120078ED69 /* bounce.wav in Resources */,
 				6B6243542C0F8D3D00CBF9C9 /* flying_bird.riv in Resources */,
-				6B3D123A2C1064480035491D /* ground-3.riv in Resources */,
 				6B6243642C0FF8A800CBF9C9 /* flyerdie.wav in Resources */,
 				6B3D123E2C1084860035491D /* ground-6.riv in Resources */,
 				6B6243602C0FF7D500CBF9C9 /* crawler_jump.wav in Resources */,
 				6B62435F2C0FF7D500CBF9C9 /* button.wav in Resources */,
+				6BBA2C242C11BC770078ED69 /* tree.riv in Resources */,
 				6B62433E2C0F45B800CBF9C9 /* Assets.xcassets in Resources */,
+				6BB81BAE2C126AA100DEDB4F /* AmberyGarden.ttf in Resources */,
 				6B6243662C0FFAF700CBF9C9 /* bgm.mp3 in Resources */,
+				6BB81BB02C126B9100DEDB4F /* DecemberShow.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +227,12 @@
 				6B62433C2C0F45B400CBF9C9 /* ContentView.swift in Sources */,
 				6B62434D2C0F4FE600CBF9C9 /* GroundView.swift in Sources */,
 				6B62434A2C0F4EAE00CBF9C9 /* BirdView.swift in Sources */,
+				6BB81BA32C122FC700DEDB4F /* SettingsView.swift in Sources */,
+				6BBA2C222C11B5760078ED69 /* TreeView.swift in Sources */,
 				6B62433A2C0F45B400CBF9C9 /* Flappy_BirdApp.swift in Sources */,
 				6B6243622C0FF84100CBF9C9 /* SoundManager.swift in Sources */,
 				6B6243482C0F461100CBF9C9 /* GameModel.swift in Sources */,
+				6BB81BA52C1231EE00DEDB4F /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +369,7 @@
 				DEVELOPMENT_TEAM = K6623R3GP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flappy-Bird-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -372,6 +399,7 @@
 				DEVELOPMENT_TEAM = K6623R3GP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flappy-Bird-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

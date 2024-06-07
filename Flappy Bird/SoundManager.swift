@@ -1,10 +1,3 @@
-//
-//  SoundManager.swift
-//  Flappy Bird
-//
-//  Created by Anoop Jose on 05/06/2024.
-//
-
 import AVFoundation
 
 /// Manages all audio functionalities for the application, including sound effects and background music.
@@ -15,12 +8,23 @@ class SoundManager {
     private var flapSoundPlayer: AVAudioPlayer?
     private var buttonSoundPlayer: AVAudioPlayer?
     private var gameOverSoundPlayer: AVAudioPlayer?
+    private var collisionSoundPlayer: AVAudioPlayer?
     private var backgroundMusicPlayer: AVAudioPlayer?
+
+    private var soundEffectsEnabled: Bool {
+        UserDefaults.standard.bool(forKey: "soundEffectsEnabled")
+    }
+    
+    private var musicEnabled: Bool {
+        UserDefaults.standard.bool(forKey: "musicEnabled")
+    }
 
     /// Initializes the sound manager by loading all necessary sounds.
     private init() {
         loadSounds()
         loadBackgroundMusic()
+        UserDefaults.standard.register(defaults: ["soundEffectsEnabled": true])
+        UserDefaults.standard.register(defaults: ["musicEnabled": true])// Ensures default setting is true.
     }
 
     /// Loads sound effects into their respective AVAudioPlayer properties.
@@ -28,6 +32,7 @@ class SoundManager {
         loadSoundEffect(&flapSoundPlayer, resource: "crawler_jump", type: "wav")
         loadSoundEffect(&buttonSoundPlayer, resource: "button", type: "wav")
         loadSoundEffect(&gameOverSoundPlayer, resource: "flyerdie", type: "wav")
+        loadSoundEffect(&collisionSoundPlayer, resource: "bounce", type: "wav")
     }
 
     /// Helper function to load a sound effect from a file into an AVAudioPlayer.
@@ -62,25 +67,76 @@ class SoundManager {
             print("bgm.mp3 file not found.")
         }
     }
+    
+    func updateSoundEffectsSettings() {
+            if soundEffectsEnabled {
+                // Allow sounds to play
+                prepareAllSounds()
+            } else {
+                // Stop and reset all sounds
+                stopAllSounds()
+            }
+        }
+    
+    private func prepareAllSounds() {
+            [flapSoundPlayer, buttonSoundPlayer, gameOverSoundPlayer, collisionSoundPlayer, backgroundMusicPlayer].forEach { player in
+                player?.prepareToPlay()
+            }
+        }
+
+        private func stopAllSounds() {
+            [flapSoundPlayer, buttonSoundPlayer, gameOverSoundPlayer, collisionSoundPlayer, backgroundMusicPlayer].forEach { player in
+                player?.stop()
+                player?.currentTime = 0
+            }
+        }
+    
+    func updateMusicSettings() {
+            if musicEnabled {
+                // Allow sounds to play
+                prepareMusic()
+            } else {
+                // Stop and reset all sounds
+                stopMusic()
+            }
+        }
+    
+    private func prepareMusic() {
+            [backgroundMusicPlayer].forEach { player in
+                player?.prepareToPlay()
+            }
+        }
+
+        private func stopMusic() {
+            [backgroundMusicPlayer].forEach { player in
+                player?.stop()
+                player?.currentTime = 0
+            }
+        }
 
     /// Plays the flap sound effect.
     func playFlapSound() {
-        flapSoundPlayer?.play()
+        playSoundEffects(player: flapSoundPlayer)
     }
 
     /// Plays the button click sound effect.
     func playButtonSound() {
-        buttonSoundPlayer?.play()
+        playSoundEffects(player: buttonSoundPlayer)
     }
 
     /// Plays the game over sound effect.
     func playGameOverSound() {
-        gameOverSoundPlayer?.play()
+        playSoundEffects(player: gameOverSoundPlayer)
+    }
+
+    /// Plays the collision sound effect.
+    func playCollisionSound() {
+        playSoundEffects(player: collisionSoundPlayer)
     }
 
     /// Starts playing the background music if it is not already playing.
     func playBackgroundMusic() {
-        if !(backgroundMusicPlayer?.isPlaying ?? true) {
+        if musicEnabled && !(backgroundMusicPlayer?.isPlaying ?? true) {
             backgroundMusicPlayer?.play()
         }
     }
@@ -88,5 +144,12 @@ class SoundManager {
     /// Stops the background music.
     func stopBackgroundMusic() {
         backgroundMusicPlayer?.stop()
+    }
+
+    /// Plays a given sound if the sound setting is enabled.
+    private func playSoundEffects(player: AVAudioPlayer?) {
+        if soundEffectsEnabled {
+            player?.play()
+        }
     }
 }

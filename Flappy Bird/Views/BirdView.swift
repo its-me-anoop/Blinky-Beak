@@ -13,6 +13,7 @@ import RiveRuntime
 struct BirdView: View {
     var position: CGPoint  // Position of the bird on the screen.
 
+
     // The body of the BirdView defines its visual structure.
     var body: some View {
         VStack {  // Vertical stack to organize views.
@@ -20,6 +21,7 @@ struct BirdView: View {
             RiveViewModel(fileName: "flying_bird").view()
                 .frame(height: 50)  // Sets the height of the frame for the bird's view.
                 .position(position)  // Positions the bird according to the CGPoint provided.
+    
         }
     }
 }
@@ -27,7 +29,7 @@ struct BirdView: View {
 // SwiftUI Preview for BirdView
 struct BirdView_Previews: PreviewProvider {
     static var previews: some View {
-        BirdView(position: CGPoint(x: 100, y: 300))  // Preview the BirdView with a specified position.
+        BirdView(position: CGPoint(x: 100, y: 300))
     }
 }
 
