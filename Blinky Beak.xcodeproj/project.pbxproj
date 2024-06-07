@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B62433A2C0F45B400CBF9C9 /* Flappy_BirdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */; };
+		6B62433A2C0F45B400CBF9C9 /* Blinky_BeakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6243392C0F45B400CBF9C9 /* Blinky_BeakApp.swift */; };
 		6B62433C2C0F45B400CBF9C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62433B2C0F45B400CBF9C9 /* ContentView.swift */; };
 		6B62433E2C0F45B800CBF9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */; };
 		6B6243412C0F45B800CBF9C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6243402C0F45B800CBF9C9 /* Preview Assets.xcassets */; };
@@ -32,8 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B6243362C0F45B400CBF9C9 /* Flappy Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_BirdApp.swift; sourceTree = "<group>"; };
+		6B6243362C0F45B400CBF9C9 /* Blinky Beak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinky Beak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6243392C0F45B400CBF9C9 /* Blinky_BeakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinky_BeakApp.swift; sourceTree = "<group>"; };
 		6B62433B2C0F45B400CBF9C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6243402C0F45B800CBF9C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		6B6243652C0FFAF700CBF9C9 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		6BB81BA22C122FC700DEDB4F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		6BB81BA42C1231EE00DEDB4F /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
-		6BB81BA82C12670400DEDB4F /* Flappy-Bird-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Flappy-Bird-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6BB81BA82C12670400DEDB4F /* Blinky-Beak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blinky-Beak-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6BB81BAB2C126A7A00DEDB4F /* SuperBoys.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperBoys.ttf; sourceTree = "<group>"; };
 		6BB81BAD2C126AA100DEDB4F /* AmberyGarden.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmberyGarden.ttf; sourceTree = "<group>"; };
 		6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DecemberShow.ttf; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		6B62432D2C0F45B400CBF9C9 = {
 			isa = PBXGroup;
 			children = (
-				6B6243382C0F45B400CBF9C9 /* Flappy Bird */,
+				6B6243382C0F45B400CBF9C9 /* Blinky Beak */,
 				6B6243372C0F45B400CBF9C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,15 +80,15 @@
 		6B6243372C0F45B400CBF9C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B6243362C0F45B400CBF9C9 /* Flappy Bird.app */,
+				6B6243362C0F45B400CBF9C9 /* Blinky Beak.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B6243382C0F45B400CBF9C9 /* Flappy Bird */ = {
+		6B6243382C0F45B400CBF9C9 /* Blinky Beak */ = {
 			isa = PBXGroup;
 			children = (
-				6BB81BA82C12670400DEDB4F /* Flappy-Bird-Info.plist */,
+				6BB81BA82C12670400DEDB4F /* Blinky-Beak-Info.plist */,
 				6BB81BAB2C126A7A00DEDB4F /* SuperBoys.ttf */,
 				6BB81BAF2C126B9100DEDB4F /* DecemberShow.ttf */,
 				6BB81BAD2C126AA100DEDB4F /* AmberyGarden.ttf */,
@@ -99,14 +99,14 @@
 				6BBA2C1E2C11B3120078ED69 /* bounce.wav */,
 				6B62434B2C0F4FC700CBF9C9 /* Views */,
 				6B6243472C0F461100CBF9C9 /* GameModel.swift */,
-				6B6243392C0F45B400CBF9C9 /* Flappy_BirdApp.swift */,
+				6B6243392C0F45B400CBF9C9 /* Blinky_BeakApp.swift */,
 				6B62433D2C0F45B800CBF9C9 /* Assets.xcassets */,
 				6B6243532C0F8D3D00CBF9C9 /* flying_bird.riv */,
 				6B62433F2C0F45B800CBF9C9 /* Preview Content */,
 				6B6243612C0FF84100CBF9C9 /* SoundManager.swift */,
 				6BB81BA42C1231EE00DEDB4F /* UserSettings.swift */,
 			);
-			path = "Flappy Bird";
+			path = "Blinky Beak";
 			sourceTree = "<group>";
 		};
 		6B62433F2C0F45B800CBF9C9 /* Preview Content */ = {
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B6243352C0F45B400CBF9C9 /* Flappy Bird */ = {
+		6B6243352C0F45B400CBF9C9 /* Blinky Beak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B6243442C0F45B800CBF9C9 /* Build configuration list for PBXNativeTarget "Flappy Bird" */;
+			buildConfigurationList = 6B6243442C0F45B800CBF9C9 /* Build configuration list for PBXNativeTarget "Blinky Beak" */;
 			buildPhases = (
 				6B6243322C0F45B400CBF9C9 /* Sources */,
 				6B6243332C0F45B400CBF9C9 /* Frameworks */,
@@ -145,12 +145,12 @@
 			);
 			dependencies = (
 			);
-			name = "Flappy Bird";
+			name = "Blinky Beak";
 			packageProductDependencies = (
 				6B6243512C0F89DA00CBF9C9 /* RiveRuntime */,
 			);
 			productName = "Flappy Bird";
-			productReference = 6B6243362C0F45B400CBF9C9 /* Flappy Bird.app */;
+			productReference = 6B6243362C0F45B400CBF9C9 /* Blinky Beak.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6B6243312C0F45B400CBF9C9 /* Build configuration list for PBXProject "Flappy Bird" */;
+			buildConfigurationList = 6B6243312C0F45B400CBF9C9 /* Build configuration list for PBXProject "Blinky Beak" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B6243352C0F45B400CBF9C9 /* Flappy Bird */,
+				6B6243352C0F45B400CBF9C9 /* Blinky Beak */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +221,7 @@
 				6B62434A2C0F4EAE00CBF9C9 /* BirdView.swift in Sources */,
 				6BB81BA32C122FC700DEDB4F /* SettingsView.swift in Sources */,
 				6BBA2C222C11B5760078ED69 /* TreeView.swift in Sources */,
-				6B62433A2C0F45B400CBF9C9 /* Flappy_BirdApp.swift in Sources */,
+				6B62433A2C0F45B400CBF9C9 /* Blinky_BeakApp.swift in Sources */,
 				6B6243622C0FF84100CBF9C9 /* SoundManager.swift in Sources */,
 				6B6243482C0F461100CBF9C9 /* GameModel.swift in Sources */,
 				6BB81BA52C1231EE00DEDB4F /* UserSettings.swift in Sources */,
@@ -357,26 +357,31 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Flappy Bird/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Blinky Beak/Preview Content\"";
 				DEVELOPMENT_TEAM = K6623R3GP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Flappy-Bird-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blinky Beak";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "flutterly.co.uk.Flappy-Bird";
+				PRODUCT_BUNDLE_IDENTIFIER = "flutterly.co.uk.Blinky-Beak";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,33 +392,38 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Flappy Bird/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Blinky Beak/Preview Content\"";
 				DEVELOPMENT_TEAM = K6623R3GP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Flappy-Bird-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blinky Beak";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "flutterly.co.uk.Flappy-Bird";
+				PRODUCT_BUNDLE_IDENTIFIER = "flutterly.co.uk.Blinky-Beak";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B6243312C0F45B400CBF9C9 /* Build configuration list for PBXProject "Flappy Bird" */ = {
+		6B6243312C0F45B400CBF9C9 /* Build configuration list for PBXProject "Blinky Beak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B6243422C0F45B800CBF9C9 /* Debug */,
@@ -422,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B6243442C0F45B800CBF9C9 /* Build configuration list for PBXNativeTarget "Flappy Bird" */ = {
+		6B6243442C0F45B800CBF9C9 /* Build configuration list for PBXNativeTarget "Blinky Beak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B6243452C0F45B800CBF9C9 /* Debug */,

@@ -10,7 +10,7 @@ import SwiftUI
 
 // The main entry point for the SwiftUI application.
 @main
-struct Flappy_BirdApp: App {
+struct Blinky_BeakApp: App {
     // The body of the App, describing its content.
     var body: some Scene {
         // A window group containing the ContentView of the application.
